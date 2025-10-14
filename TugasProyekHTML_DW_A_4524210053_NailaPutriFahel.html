@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Workshop Digital Marketing 101</title>
+</head>
+<body>
+    <header>
+        <h1>Workshop Digital Marketing 101</h1>
+        <p>Tingkatkan Bisnis Anda di Era Digital | <time datetime="2025-11-25">25 November 2025</time></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#info">Informasi</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#daftar">Daftar Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="info">
+            <h2>Tentang Workshop</h2>
+            <article>
+                <p>
+                    Workshop Digital Marketing 101 adalah program pelatihan intensif yang dirancang khusus untuk para pelaku usaha, 
+                    profesional marketing, dan siapa saja yang ingin memahami dasar-dasar pemasaran digital di era modern.
+                </p>
+                <p>
+                    Dalam workshop ini, Anda akan mempelajari strategi-strategi praktis untuk meningkatkan visibilitas bisnis online, 
+                    memahami perilaku konsumen digital, dan mengoptimalkan berbagai channel pemasaran untuk mencapai target pasar Anda.
+                </p>
+                <p>
+                    Dipandu oleh praktisi berpengalaman di industri digital marketing, workshop ini menawarkan kombinasi teori dan 
+                    studi kasus nyata yang dapat langsung Anda aplikasikan untuk bisnis Anda. Materi workshop mencakup <mark>strategi SEO terkini</mark> 
+                    dan teknik-teknik yang telah terbukti efektif.
+                </p>
+                
+                <details>
+                    <summary>Lihat Fasilitas Workshop</summary>
+                    <ul>
+                        <li>Sertifikat resmi</li>
+                        <li>Materi digital lengkap</li>
+                        <li>Akses grup alumni</li>
+                        <li>Konsultasi gratis 1 bulan</li>
+                        <li>Coffee break & lunch</li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda Acara</h2>
+            <p>Durasi workshop: <time datetime="PT3H">3 jam</time></p>
+            <ol>
+                <li><time datetime="09:00">09:00</time> - <time datetime="10:00">10:00</time>: Sesi 1 - Pengenalan SEO</li>
+                <li><time datetime="10:00">10:00</time> - <time datetime="11:00">11:00</time>: Sesi 2 - Pemasaran Media Sosial</li>
+                <li><time datetime="11:00">11:00</time> - <time datetime="12:00">12:00</time>: Sesi 3 - Iklan Berbayar (SEM)</li>
+            </ol>
+            <p>Tingkat Kesulitan Materi: <meter min="0" max="5" value="2" title="2 dari 5">Pemula-Menengah</meter></p>
+        </section>
+
+        <section id="daftar">
+            <h2>Formulir Pendaftaran</h2>
+            <form action="/submit-registration" method="post">
+                <fieldset>
+                    <legend>Data Peserta</legend>
+                    <p>
+                        <label for="nama">Nama Lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" required maxlength="100" placeholder="Contoh: Naila Putri Fahel">
+                    </p>
+                    <p>
+                        <label for="email">Alamat Email:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="email@example.com">
+                    </p>
+                    <p>
+                        <label for="telepon">Nomor Telepon:</label><br>
+                        <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,13}" placeholder="08123456789">
+                    </p>
+                    <p>
+                        <label for="usia">Usia:</label><br>
+                        <input type="number" id="usia" name="usia" min="17" max="100" placeholder="Contoh: 20">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pilihan Paket dan Preferensi</legend>
+                    <p>
+                        <strong>Pilihan Paket:</strong><br>
+                        <input type="radio" id="reguler" name="paket" value="reguler" required>
+                        <label for="reguler">Reguler (Rp 500.000)</label><br>
+                        
+                        <input type="radio" id="vip" name="paket" value="vip">
+                        <label for="vip">VIP (Rp 750.000 - Termasuk 1-on-1 mentoring)</label>
+                    </p>
+                    
+                    <p>
+                        <label for="industri">Industri Bisnis Anda:</label><br>
+                        <input list="industries" id="industri" name="industri" placeholder="Pilih atau ketik industri">
+                        <datalist id="industries">
+                            <option value="E-commerce"></option>
+                            <option value="F&B"></option>
+                            <option value="Fashion"></option>
+                            <option value="Teknologi"></option>
+                            <option value="Pendidikan"></option>
+                            <option value="Kesehatan"></option>
+                            <option value="Lainnya"></option>
+                        </datalist>
+                    </p>
+                    
+                    <p>
+                        <label for="pengalaman">Tingkat Pengalaman Digital Marketing (1-5):</label><br>
+                        <input type="range" id="pengalaman" name="pengalaman" min="1" max="5" step="1" value="1">
+                        <small>1 = Pemula, 5 = Ahli</small>
+                    </p>
+                    
+                    <p>
+                        <label for="alasan">Alasan Mengikuti Workshop:</label><br>
+                        <textarea id="alasan" name="alasan" rows="5" cols="50" required placeholder="Ceritakan tujuan dan harapan Anda mengikuti workshop ini..."></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Daftar Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    
+    <aside>
+        <h3>Testimoni Peserta Sebelumnya</h3>
+        <blockquote>
+            <p>"Workshop ini mengubah cara saya memasarkan produk online. <abbr title="Search Engine Optimization">SEO</abbr> yang diajarkan sangat praktis!"</p>
+            <footer>— <cite>Viella Cellina, Owner Toko Online Fashion</cite></footer>
+        </blockquote>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 Event Organizer Kita. Semua Hak Cipta Dilindungi.</p>
+        <address>
+            Email: <a href="mailto:info@eventorganizer.com">info@eventorganizer.com</a> | 
+            Telp: <a href="tel:+622112345678">021-1234-5678</a>
+        </address>
+        <p>
+            <strong>Ikuti Kami:</strong><br>
+            <a href="https://www.instagram.com/eventorganizerkita" target="_blank" rel="noopener">Instagram</a> | 
+            <a href="https://www.facebook.com/eventorganizerkita" target="_blank" rel="noopener">Facebook</a> | 
+            <a href="https://www.tiktok.com/@eventorganizerkita" target="_blank" rel="noopener">TikTok</a>
+        </p>
+    </footer>
+</body>
+</html>
